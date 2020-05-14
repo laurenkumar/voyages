@@ -1,44 +1,68 @@
-# LK Digital
+Hosted at: http://gsap-practice-nirav.herokuapp.com
+![Farmers Market Finder Demo](demo/demo.gif)
+## Available Scripts
 
-## Overview
+In the project directory, you can run:
 
-### Front End
+### `yarn start`
 
-The front end of the portfolio was made entirely with plain JavaScript code using ECMAScript 2015+ features without any frameworks like Angular, React or Vue. It's also using libraries such as [GSAP](https://greensock.com/), [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll), [Lodash](https://lodash.com/) and [Three.js](https://threejs.org/). To generate our static files that will be uploaded to the environment, we're using [Webpack](https://webpack.js.org/).
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Back End
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-The back end of the portfolio was made with [Express](https://expressjs.com/) and [Prismic](https://prismic.io/). There's nothing fancy happening in the logic of it, it's just a bunch of routes and some data that will populate our [Pug](https://pugjs.org/api/getting-started.html) views.
+### `yarn test`
 
-# Getting Started
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-You need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed in your machine, these are our only dependencies to run the project locally.
+### `yarn build`
 
-After that, you need to setup an account at [Prismic](https://prismic.io/) and create your fields with the same names used by this application, in the end of this README file you're able to find all the instructions related with it.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-We're using a `.env` file to retrieve our credentials used by Prismic and also the Google Analytics ID. So you need to create a `.env` file in the root of this application like this:
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-```
-GOOGLE_ANALYTICS=YOUR_GOOGLE_ANALYTICS
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-PRISMIC_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
-PRISMIC_CLIENT_ID=YOUR_CLIENT_ID
-PRISMIC_CLIENT_SECRET=YOUR_CLIENT_SECRET
-PRISMIC_ENDPOINT=YOUR_ENDPOINT
-```
+### `yarn eject`
 
-After creating your `.env` file and setting up your Prismic account, you're able to run your project without any problems by running the commands below in your terminal.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```sh
-# Clone the project.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Install npm depedencies.
-npm install
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-# Configure .env variables and run the website.
-npm start
-```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-# Prismic
+## Learn More
 
-I think this might be the trickiest part of running this project locally, you need to understand how Prismic works, then create your fields there and then finally populate the content. To make your life easier, I'm providing all JSON structures inside the `prismic` folder of this repository. Don't forget to match the names used in the JSON files with the ID of your Custom Type of Prismic.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
