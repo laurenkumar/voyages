@@ -1,7 +1,7 @@
 import React from "react";
 
 import ProjectList from "./components/ProjectList/ProjectList";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (

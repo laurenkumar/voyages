@@ -4,13 +4,14 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
+    "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.1.2",
-    "gsap": "^3.0.4",
+    "gsap": "file:../Downloads/gsap-shockingly-green/npm-install-this/gsap-bonus.tgz",
+    "isotope-layout": "^3.0.6",
     "mime": "^2.4.5",
     "node-sass": "^4.13.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-scripts": "3.3.0"
   },
   "scripts": {
@@ -33,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
