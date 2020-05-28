@@ -118,7 +118,7 @@ input:-webkit-autofill,input:-webkit-autofill:active,input:-webkit-autofill:focu
 }
 
 .Container__absolute {
-	top:0;left:0;position:fixed;touch-action:none;
+	top:0;left:0;position:fixed;touch-action:none;z-index: 9;
 }
 
 .Container__masked {
