@@ -10,6 +10,19 @@ import image3 from "./image-3.jpg";
 import image4 from "./image-4.jpg";
 import image5 from "./tokyo.jpg";
 import image6 from "./berlin.jpg";
+import image7 from "./osaka.jpg";
+import image8 from "./seoul.jpg";
+import image9 from "./pekin.jpg";
+import image10 from "./shanghai.jpg";
+import image11 from "./xian.jpg";
+import image12 from "./guilin.jpg";
+import image13 from "./toronto.jpg";
+import image14 from "./sanfrancisco.jpg";
+import image15 from "./venise.jpg";
+import image16 from "./milan.jpg";
+import image17 from "./pise.jpg";
+import image18 from "./pompei.jpeg";
+import image19 from "./naples.jpg";
 
 import "./ProjectList.scss";
 
@@ -20,10 +33,29 @@ const rowClass = "row"
 const rowSelector = "." + rowClass;
 const imageClass = "sliderImage";
 const imageSelector = "." + imageClass;
-const imgURLArray = [{src: image1, class: "irlande", titre: "The temple bar"}, {src: image2, class: "irlande", titre: "Pont East / West side"}, {src: image3, class: "italie", titre: "Rome"}, {src: image4, class: "italie", titre: "Florence"}, {src: image5, class: "japon", titre: "Tokyo"}, {src: image6, class: "allemagne", titre: "Berlin"}];
+const imgURLArray = [ {src: image1, class: "Irlande", titre: "Dublin"},
+                      {src: image2, class: "Royaume Unis", titre: "Londres"},
+                      {src: image3, class: "Italie", titre: "Rome"},
+                      {src: image4, class: "Italie", titre: "Florence"},
+                      {src: image5, class: "Japon", titre: "Tokyo"},
+                      {src: image6, class: "Allemagne", titre: "Berlin"},
+                      {src: image7, class: "Japon", titre: "Osaka"},
+                      {src: image8, class: "Corée du Sud", titre: "Seoul"},
+                      {src: image9, class: "Chine", titre: "Pekin"},
+                      {src: image10, class: "Chine", titre: "Shanghai"},
+                      {src: image11, class: "Chine", titre: "Xi'an"},
+                      {src: image12, class: "Chine", titre: "Guilin"},
+                      {src: image13, class: "Canada", titre: "Toronto"},
+                      {src: image14, class: "USA", titre: "San Francisco"},
+                      {src: image15, class: "Italie", titre: "Venise"},
+                      {src: image16, class: "Italie", titre: "Milan"},
+                      {src: image17, class: "Italie", titre: "Pise"},
+                      {src: image18, class: "Italie", titre: "Pompeii"},
+                      {src: image19, class: "Italie", titre: "Naples"},
+                    ];
 const imgURLArrayLength = imgURLArray ? imgURLArray.length : -1;
-const rowNum = 5;
-const imgNum = 15;
+const rowNum = 10;
+const imgNum = 30;
 
 const useInertia = true;
 const useCenterGrid = true;
@@ -244,6 +276,8 @@ class projectList extends Component {
       left: 0,
       width: "100vw",
       height: "100vh",
+      borderTop: "25px solid",
+      borderBottom: "25px solid",
       zIndex: 9,
     });
   }
@@ -414,7 +448,6 @@ class projectList extends Component {
       position: 'absolute', 
       bottom: '20%',
     };
-    const initialCoordinates = [48.8566, 2.3522];
     return (
       <React.Fragment>
       {
@@ -439,25 +472,55 @@ class projectList extends Component {
         </a>
         </li>
         <li className="listAside">
-        <a data-title="irlande" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("irlande")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("irlande"); this.setState({show:!this.state.show})}}>
+        <a data-title="Irlande" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("Irlande")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("Irlande"); this.setState({show:!this.state.show})}}>
         <div>Irlande
         </div>
         </a>
         </li>
         <li className="listAside">
-        <a data-title="allemagne" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("allemagne")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("allemagne"); this.setState({show:!this.state.show})}}>
+        <a data-title="Allemagne" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("Allemagne")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("Allemagne"); this.setState({show:!this.state.show})}}>
         <div>Allemagne
         </div>
         </a>
         </li>
         <li className="listAside">
-        <a data-title="japon" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("japon")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("japon"); this.setState({show:!this.state.show})}}>
+        <a data-title="Chine" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("Chine")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("Chine"); this.setState({show:!this.state.show})}}>
+        <div>Chine
+        </div>
+        </a>
+        </li>
+        <li className="listAside">
+        <a data-title="Canada" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("Canada")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("Canada"); this.setState({show:!this.state.show})}}>
+        <div>Canada
+        </div>
+        </a>
+        </li>
+        <li className="listAside">
+        <a data-title="USA" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("USA")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("USA"); this.setState({show:!this.state.show})}}>
+        <div>USA
+        </div>
+        </a>
+        </li>
+        <li className="listAside">
+        <a data-title="Japon" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("Japon")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("Japon"); this.setState({show:!this.state.show})}}>
         <div>Japon
         </div>
         </a>
         </li>
         <li className="listAside">
-        <a data-title="italie" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("italie")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("italie"); this.setState({show:!this.state.show})}}>
+        <a data-title="Corée du Sud" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("Corée du Sud")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("Corée du Sud"); this.setState({show:!this.state.show})}}>
+        <div>Corée du Sud
+        </div>
+        </a>
+        </li>
+        <li className="listAside">
+        <a data-title="Royaume Unis" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("Royaume Unis")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("Royaume Unis"); this.setState({show:!this.state.show})}}>
+        <div>Royaume Unis
+        </div>
+        </a>
+        </li>
+        <li className="listAside">
+        <a data-title="Italie" style={{opacity: "1"}} onMouseOver={() => this.imgEffect("Italie")} onMouseOut={() => this.imgEffectLeave()} onClick={() => {this.onFilterChange("Italie"); this.setState({show:!this.state.show})}}>
         <div>Italie
         </div>
         </a>

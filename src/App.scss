@@ -621,6 +621,53 @@ input+.Input__error {
 	pointer-events:all;position:absolute;top:0;left:0;width:1px;height:1px;display:inline-grid;place-content:center;pointer-events:none;backface-visibility:hidden;
 }
 
+.notrePosition {
+	position: absolute;
+	bottom: 0;
+	color: white;
+	z-index: 999999999;
+	right: 5px;
+	font-size: .8em;
+}
+
+.index {
+	position: absolute;
+	top: 0;
+	color: white;
+	z-index: 999999999;
+	left: 5px;
+	font-size: .8em;
+}
+
+.nous {
+	position: absolute;
+	top: 0;
+	color: white;
+	z-index: 999999999;
+	right: 5px;
+	font-size: .8em;
+}
+
+.nosVoyages {
+	position: absolute;
+	top: 0;
+	color: white;
+	z-index: 999999999;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	font-size: .8em;
+}
+
+#clock {
+	position: absolute;
+	bottom: 0;
+	color: white;
+	z-index: 999999999;
+	left: 5px;
+	font-size: .8em;
+}
+
 .Cursor__cursor svg {
 	overflow:visible;
 }

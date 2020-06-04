@@ -150,10 +150,16 @@
 }
 
 @media (max-width: 1548px) {
-	.navFiltre {
+	.navFiltre span{
 		font-size: 16px;
 	}
 	.listAside a {
 	    font-size: 24px;
+	}
+}
+
+@media (max-width: 425px) {
+	.navFiltre {
+		margin: 7.7vw 0 0;
 	}
 }
