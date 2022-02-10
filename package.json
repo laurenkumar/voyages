@@ -11,7 +11,7 @@
     "gsap": "file:../Downloads/gsap-shockingly-green/npm-install-this/gsap-bonus.tgz",
     "isotope-layout": "^3.0.6",
     "mime": "^2.4.5",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
